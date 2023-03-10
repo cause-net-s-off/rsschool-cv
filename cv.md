@@ -23,8 +23,8 @@ Information Technology has been my area of interest for a long time and want to 
 - Nuke
 
 ### Java Script code example: 
-*Calculating the sum of all elements of an array 'without limiting' their values. *
-*I solved this task by representing the numbers as a strings*
+*Calculating the sum of all elements of an array 'without limiting' their values. 
+I solved this task by representing the numbers as a strings*
 ```javascript
 const sum = (arr) => {
         if (arr.length == 0) { return 0}
