@@ -1,8 +1,5 @@
-## **Kuznetsov Ivan**
-
------
-
-### Junior Frontend developer
+# **Kuznetsov Ivan**
+#### Junior Frontend developer
 
 ---
  
@@ -21,7 +18,33 @@ Information Technology has been my area of interest for a long time and want to 
 - C++ Basics
 - Java Script Basics
 - Git/GitHub Basics
+- VS Code 
+- Adobe Suite Strong skills (After Effects, Photoshop, Premiere Pro, Lightroom)
+- Nuke
 
+### Java Script code example: 
+*Calculating the sum of all elements of an array 'without limiting' their values. *
+*I solved this task by representing the numbers as a strings*
+```javascript
+const sum = (arr) => {
+        if (arr.length == 0) { return 0}
+        arr.sort((a, b) => b - a)
+        let maxElementLength = String(arr[0]).length
+        let total = ''
+        let acum = 0
+        for (i = 0; i < maxElementLength; i++){
+            arr.forEach((element, index) => {
+                digit = String(element).slice(String(element).length - 1 - i, String(element).length - i)
+                if (digit === '') {arr[index] = ''}
+                acum += Number(digit)
+            });
+            total = String(acum % 10) + total
+            acum = Math.trunc(acum / 10)
+        }
+        if (acum > 0) {total = String(acum) + total}
+        return total
+    }
+```
 
 ### Education: 
 Higher technical, computer-aided design systems
